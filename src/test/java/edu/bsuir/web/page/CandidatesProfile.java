@@ -5,6 +5,7 @@ import edu.bsuir.web.element.CandidatePageElements;
 import edu.bsuir.web.element.LoginElements;
 import edu.bsuir.web.element.ResumeCreation;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -120,6 +121,13 @@ public class CandidatesProfile {
     public void BackToCandidatesMainPage() {
         WebElement cand = driver.findElement(CandidatePageElements.CANDIDATE_PAGE);
         Assert.assertEquals("Опыт работы", cand.getText());
+    }
 
+    public void LoadCVLink() {
+        driver.findElement(By.id("loadCVLink")).click();
+    }
+
+    public void LoadCVLinkAccept() {
+        driver.findElement(By.xpath("//button[text() = 'OK']")).click();
     }
 }

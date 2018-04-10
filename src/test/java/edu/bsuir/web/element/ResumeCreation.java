@@ -30,6 +30,7 @@ public class ResumeCreation {
     public static final By ADDITIONALLY = By.id("additionalInfo");
     public static final By CANCEL = By.id("cancelButton");
     public static final By RESUME_DOWNLOAD = By.id("loadCVLink");
+    public static final By RESUME_DOWNLOAD_ACCEPT = By.xpath("//button[text() = 'OK']");
     public static final By BACK_TO_LIST = By.xpath("//a[@href = 'http://testing.cld.iba.by/web/guest/recruiting/candidates/-/candidates/']");
     public static final By CHANGE_IMAGE = By.id("changeImgLink");
 
